@@ -1,1 +1,1 @@
-web: nmp start
+worker: node index
