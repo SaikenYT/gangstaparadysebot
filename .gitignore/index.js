@@ -5,14 +5,14 @@ const client = new Discord.Client();
 
 var prefix = "*";
 
-client.login(process.env.TOKEN);
+bot.login(process.env.TOKEN);
 
-client.on("ready", () => {
+bot.on("ready", () => {
     console.log("Je suis prêt!");
     client.user.setGame("Tuer le karma");
 });
 
-client.on('message', async msg => {
+bot.on('message', async msg => {
     const args = msg.content.split(" ").slice(1);
 
     if (msg.content.toLowerCase().startsWith("^gif")) {      
